@@ -35,6 +35,7 @@ class NotesHandler {
           status: 'fail',
           message: error.message,
         });
+        console.error(error.statusCode);
         response.code(error.statusCode);
         return response;
       }
